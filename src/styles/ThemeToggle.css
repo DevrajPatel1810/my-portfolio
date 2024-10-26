@@ -1,0 +1,24 @@
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* Explicitly set color */
+    z-index: 1000; /* Make sure it stays on top of other elements */
+}
+
+
+.sun-icon, .moon-icon {
+    display: none;
+}
+
+.app.light .sun-icon {
+    display: block;
+}
+
+.app.dark .moon-icon {
+    display: block;
+}

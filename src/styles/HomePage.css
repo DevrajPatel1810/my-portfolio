@@ -1,0 +1,75 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 70vh;
+    background: url('../assets/background.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+/* Adding an overlay for opacity control */
+.home-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* General opacity for background */
+    z-index: 0;
+}
+
+.header, .footer {
+    background: rgba(0, 0, 0, 0.6); /* Reduce opacity for header and footer */
+}
+
+/* Ensure content is above the background overlay */
+.home-page h1, .home-page p, .contact-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.home-page h1 {
+    font-size: 48px;
+    margin-left: 20px; /* Shift to the left */
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.home-page p {
+    font-size: 24px;
+    margin: 0.625rem;
+    color: #888;
+    margin-left: 20px; /* Shift to the left */
+}
+
+/* Apply the luxury button effect to the Contact button */
+.contact-btn {
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.625rem;
+    letter-spacing: 0.3em;
+    color: rgba(223, 190, 106, 0.7);
+    border-radius: 0;
+    padding: 18px 80px 20px;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    margin: 0.625rem;
+    border: 1px solid rgba(223, 190, 106, 0.3);
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.contact-btn:hover {
+    color: #fff;
+    border: 1px solid rgba(223, 190, 106, 0);
+    background-position: 99% 50%;
+}
+
+

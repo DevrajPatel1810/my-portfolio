@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0); /* Make the background fully transparent */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.header .logo {
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black; /* Keep the font color to ensure text is visible */
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.header nav ul li {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.header nav ul li a {
+    color: black; /* Keep the font color for navigation links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #fff;
+}
+
+.header nav ul li a:hover::before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.header nav ul li a:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}

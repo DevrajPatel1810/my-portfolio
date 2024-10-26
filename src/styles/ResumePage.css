@@ -1,0 +1,33 @@
+/*.resume-page {*/
+/*    text-align: center;*/
+/*    padding: 142px;*/
+/*    background: url('../assets/background.jpg') center center/cover no-repeat;*/
+/*}*/
+
+/* ResumePage.css */
+.resume-page {
+    background-color: rgba(51, 51, 51, 0.8); /* Lighter tone matching header/footer */
+    color: white; /* Ensure text is visible on the darker background */
+    padding: 20px;
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-width: 800px; /* Optional: Limit width for better readability */
+    margin: auto; /* Center the content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow for depth */
+}
+
+h1, h2 {
+    color: #fff; /* White color for headings */
+}
+
+ul {
+    list-style-type: disc; /* Bulleted list style */
+    padding-left: 20px; /* Indent the list */
+}
+
+p {
+    margin: 10px 0; /* Space between paragraphs */
+}
+.resume-fill{
+    background: url('../assets/background.jpg') center center/cover no-repeat;
+    opacity: inherit;
+}
