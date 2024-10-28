@@ -1,0 +1,23 @@
+.app.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.app.dark {
+    background-color: #404040;
+    color: #ffffff;
+}
+
+.header,
+.footer,
+.theme-toggle {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark .header, .app.dark .footer {
+    background-color: #333333;
+}
+
+.app.dark .theme-toggle {
+    color: #ffffff;
+}

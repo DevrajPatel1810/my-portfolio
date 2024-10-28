@@ -1,0 +1,58 @@
+/* AboutPage.css */
+.about-page {
+    padding: 50px;
+    background: url('../assets/background.jpg') center center/cover no-repeat;
+    color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-intro h1 {
+    font-size: 3rem;
+    color: #dfbe6a;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    color: #b6b2b2;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-section {
+    background: rgba(34, 34, 34, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #dfbe6a;
+    margin-bottom: 10px;
+}
+
+.about-section h2 i {
+    margin-right: 10px;
+    color: #dfbe6a;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
+}

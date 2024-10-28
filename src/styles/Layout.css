@@ -1,0 +1,20 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+.header {
+    flex: 0 1 auto; /* Adjust as needed for header height */
+}
+
+.content {
+    flex: 1 1 auto; /* Main content fills remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    flex: 0 1 auto; /* Adjust as needed for footer height */
+}
